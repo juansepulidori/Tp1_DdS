@@ -24,7 +24,7 @@ namespace Tp1_DdS
             Console.Write("Ingrese su opcion: ");
         }
 
-        public void Acciones(int op, Socio sc, Cuota ct)
+        public void Acciones(int op, Socio sc, Cuota ct, Peticion pe)
         {
             switch (op)
             {
@@ -33,6 +33,9 @@ namespace Tp1_DdS
                     break;
                 case 2:
                     sc.VerificarDatos();
+                    break;
+                case 3:
+                    pe.AtenderPeticion(sc);
                     break;
                 case 5:
                     ct.LiquidarCuotas();

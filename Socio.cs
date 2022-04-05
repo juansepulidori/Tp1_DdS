@@ -102,9 +102,9 @@ namespace Tp1_DdS
             TextReader leer = new StreamReader("Clientes.txt");
             string cadena, dniVer;
             bool cond = true;
+            cadena = leer.ReadLine();
             Console.Write("Ingrese el dni: ");
             dniVer = Console.ReadLine();
-            cadena = leer.ReadLine();
             while (cadena != null)
             {
                 if(cadena == dniVer)
@@ -134,18 +134,7 @@ namespace Tp1_DdS
                     medicamento = cadena;
                     cadena = leer.ReadLine();
                     categoria = cadena;
-                    Console.WriteLine("DNI: "+dni);
-                    Console.WriteLine("Nombre y apellido: "+nombreApellido);
-                    Console.WriteLine("Fecha de nacimiento: "+fechaNacimiento);
-                    Console.WriteLine("Domicilio: "+domicilio);
-                    Console.WriteLine("Localidad: "+localidad);
-                    Console.WriteLine("Teléfono: "+telefono);
-                    Console.WriteLine("E-mail: "+email);
-                    Console.WriteLine("Grupo sanguíneo: "+grupoSanguineo);
-                    Console.WriteLine("Factor: "+factor);
-                    Console.WriteLine("Enfermedad crónica: "+enfermedadCronica);
-                    Console.WriteLine("Medicamento/s: "+medicamento);
-                    Console.WriteLine("Categoría: "+categoria);
+                    MostrarDatos();
                     cadena = null;
                     cond = false;
                     Console.ReadKey();
@@ -243,6 +232,41 @@ namespace Tp1_DdS
             Console.Clear();
             Console.WriteLine("Se actualizaron las categorías de los socios");
             Console.ReadKey();
+        }
+        public void MostrarDatos()
+        {
+            Console.WriteLine("DNI: " + dni);
+            Console.WriteLine("Nombre y apellido: " + nombreApellido);
+            Console.WriteLine("Fecha de nacimiento: " + fechaNacimiento);
+            Console.WriteLine("Domicilio: " + domicilio);
+            Console.WriteLine("Localidad: " + localidad);
+            Console.WriteLine("Teléfono: " + telefono);
+            Console.WriteLine("E-mail: " + email);
+            Console.WriteLine("Grupo sanguíneo: " + grupoSanguineo);
+            Console.WriteLine("Factor: " + factor);
+            Console.WriteLine("Enfermedad crónica: " + enfermedadCronica);
+            Console.WriteLine("Medicamento/s: " + medicamento);
+            Console.WriteLine("Categoría: " + categoria);
+        }
+        public void ObtenerDatos(TextReader rCl)
+        {
+            dni = int.Parse(rCl.ReadLine());
+            nombreApellido = rCl.ReadLine();
+            fechaNacimiento = DateTime.Parse(rCl.ReadLine());
+            domicilio = rCl.ReadLine();
+            localidad = rCl.ReadLine();
+            telefono = long.Parse(rCl.ReadLine());
+            email = rCl.ReadLine();
+            grupoSanguineo = rCl.ReadLine();
+            factor = rCl.ReadLine();
+            enfermedadCronica = rCl.ReadLine();
+            medicamento = rCl.ReadLine();
+            categoria = rCl.ReadLine();
+            contrasena = rCl.ReadLine();
+        }
+        public string getCategoria()
+        {
+            return categoria;
         }
     }
 }

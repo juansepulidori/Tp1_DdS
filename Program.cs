@@ -22,7 +22,7 @@ namespace Tp1_DdS
 
             while (opcion != 0)
             {
-                func.Acciones(opcion, socio, cuota);
+                func.Acciones(opcion, socio, cuota, peticion);
                 func.Menu();
                 opcion = int.Parse(Console.ReadLine());
             }
