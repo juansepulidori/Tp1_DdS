@@ -1,8 +1,0 @@
-C:\Users\Pulidori\source\repos\Tp1_DdS\bin\Debug\Tp1_DdS.exe.config
-C:\Users\Pulidori\source\repos\Tp1_DdS\bin\Debug\Tp1_DdS.exe
-C:\Users\Pulidori\source\repos\Tp1_DdS\bin\Debug\Tp1_DdS.pdb
-C:\Users\Pulidori\source\repos\Tp1_DdS\obj\Debug\Tp1_DdS.csproj.AssemblyReference.cache
-C:\Users\Pulidori\source\repos\Tp1_DdS\obj\Debug\Tp1_DdS.csproj.SuggestedBindingRedirects.cache
-C:\Users\Pulidori\source\repos\Tp1_DdS\obj\Debug\Tp1_DdS.csproj.CoreCompileInputs.cache
-C:\Users\Pulidori\source\repos\Tp1_DdS\obj\Debug\Tp1_DdS.exe
-C:\Users\Pulidori\source\repos\Tp1_DdS\obj\Debug\Tp1_DdS.pdb

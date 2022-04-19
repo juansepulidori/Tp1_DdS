@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZYGP4X8H9KLjh9OrQetYYY/l6reLTbLFQG6yGTWYyskZor32eMMzBsuqVRYaZXIGLRXAMfYHy4psWLjZNk79Gg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pulidori\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
