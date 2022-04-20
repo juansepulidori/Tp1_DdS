@@ -15,3 +15,20 @@ D:\Users\Usuario\Documents\Apuntes, Programas y Trabajos Uni. Juanse\3er año\Di
 D:\Users\Usuario\Documents\Apuntes, Programas y Trabajos Uni. Juanse\3er año\Diseño de Sistemas de Información\TP 1\Programa\Trabajo Practico 1\obj\Debug\net6.0\ref\Trabajo Practico 1.dll
 D:\Users\Usuario\Documents\Apuntes, Programas y Trabajos Uni. Juanse\3er año\Diseño de Sistemas de Información\TP 1\Programa\Trabajo Practico 1\bin\Debug\net6.0\FluentValidation.dll
 D:\Users\Usuario\Documents\Apuntes, Programas y Trabajos Uni. Juanse\3er año\Diseño de Sistemas de Información\TP 1\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.csproj.CopyComplete
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\bin\Debug\net6.0\Trabajo Practico 1.exe
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\bin\Debug\net6.0\Trabajo Practico 1.deps.json
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\bin\Debug\net6.0\Trabajo Practico 1.runtimeconfig.json
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\bin\Debug\net6.0\Trabajo Practico 1.dll
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\bin\Debug\net6.0\Trabajo Practico 1.pdb
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.csproj.AssemblyReference.cache
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.AssemblyInfoInputs.cache
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.AssemblyInfo.cs
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.csproj.CopyComplete
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.dll
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\refint\Trabajo Practico 1.dll
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.pdb
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\Trabajo Practico 1.genruntimeconfig.cache
+C:\Users\Pulidori\source\repos\Tp1_DdS\Programa\Trabajo Practico 1\obj\Debug\net6.0\ref\Trabajo Practico 1.dll
