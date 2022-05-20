@@ -11,7 +11,7 @@ namespace Trabajo_Practico_1
     {
         public SocioValidations()
         {
-            RuleFor(x => x.dni).NotEmpty();
+            RuleFor(x => x.dni).NotEmpty().MaximumLength(8);
             RuleFor(x =>x.nombreApellido).NotEmpty();
             RuleFor(x=>x.fechaNacimiento).NotEmpty().Must(ValidarFechaNacimiento);
             RuleFor(x =>x.domicilio).NotEmpty();
