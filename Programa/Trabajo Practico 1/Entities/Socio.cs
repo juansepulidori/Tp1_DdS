@@ -10,7 +10,7 @@ namespace Trabajo_Practico_1
     {
         public string dni;
         public string nombreApellido;
-        public DateTime fechaNacimiento = new DateTime();
+        public DateTime fechaNacimiento = new();
         public string domicilio;
         public string localidad;
         public string telefono;
@@ -60,7 +60,7 @@ namespace Trabajo_Practico_1
         public void RegistrarSocio()
         {
             bool cond = true;
-            TextReader leer = new StreamReader("Socios.txt");
+            TextReader leer = new StreamReader(@".\Socios\Socios.txt");
             string cadena = leer.ReadLine();
             while (cadena != null)
             {
@@ -74,7 +74,7 @@ namespace Trabajo_Practico_1
             leer.Close();
             if (cond)
             {
-                StreamWriter agregar = File.AppendText("Socios.txt");
+                StreamWriter agregar = File.AppendText(@".\Socios\Socios.txt");
                 agregar.WriteLine(dni);
                 agregar.WriteLine(nombreApellido);
                 agregar.WriteLine(fechaNacimiento);
@@ -95,7 +95,7 @@ namespace Trabajo_Practico_1
         public void VerificarDatos()
         {
             Console.Clear();
-            TextReader leer = new StreamReader("Socios.txt");
+            TextReader leer = new StreamReader(@".\Socios\Socios.txt");
             string cadena, dniVer, conVer;
             bool cond1 = true, cond2 = true;
             cadena = leer.ReadLine();
@@ -169,8 +169,8 @@ namespace Trabajo_Practico_1
         }
         public void ActualizarCategoria()
         {
-            TextReader leer = new StreamReader("Socios.txt");
-            TextWriter nuevo = File.CreateText("Socios_Nuevo.txt");
+            TextReader leer = new StreamReader(@".\Socios\Socios.txt");
+            TextWriter nuevo = File.CreateText(@".\Socios\Socios_Nuevo.txt");
             string cadena = "";
             string cambEstado = "";
             for (int i = 0; i < 3; i++)
@@ -243,9 +243,9 @@ namespace Trabajo_Practico_1
             }
             nuevo.Close();
             leer.Close();
-            File.Delete("Socios.txt");
-            File.Copy("Socios_Nuevo.txt", "Socios.txt");
-            File.Delete("Socios_Nuevo.txt");
+            File.Delete(@".\Socios\Socios.txt");
+            File.Copy(@".\Socios\Socios_Nuevo.txt", @".\Socios\Socios.txt");
+            File.Delete(@".\Socios\Socios_Nuevo.txt");
             Console.Clear();
             Console.WriteLine("Se actualizaron las categorías de los socios");
             Console.ReadKey();

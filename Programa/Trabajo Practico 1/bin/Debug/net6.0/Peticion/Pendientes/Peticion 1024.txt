@@ -1,0 +1,10 @@
+--BANCO DE SANGRE--
+Donadores necesarios: 3
+Fecha: 18/07/2022
+Horario: 9:45 AM
+Grupo sanguíneo: AB
+Lugar: Hospital Córdoba
+Dirección: Av. Patria 656
+Localidad: Córdoba
+
+Se requiere la donación urgente para el paciente: Laura Gómez

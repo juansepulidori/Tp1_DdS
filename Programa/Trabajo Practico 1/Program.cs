@@ -9,7 +9,6 @@
             Cuota cuota = new Cuota();
             Donacion donacion = new Donacion();
             Peticion peticion = new Peticion();
-
             menu.Opciones();
             int opcion = int.Parse(Console.ReadLine());
 

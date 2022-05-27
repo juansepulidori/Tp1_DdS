@@ -1,0 +1,10 @@
+--BANCO DE SANGRE--
+Donadores necesarios: 2
+Fecha: 15/07/2022
+Horario: 10:45 AM
+Grupo sanguíneo: B
+Lugar: Hospital Córdoba
+Dirección: Av. Patria 656
+Localidad: Córdoba
+
+Se requiere la donación urgente para el paciente: Benito Fernandez
