@@ -1,0 +1,58 @@
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.exe
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.deps.json
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.runtimeconfig.json
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.pdb
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.AssemblyReference.cache
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.Registro.resources
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.GenerateResource.cache
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.AssemblyInfoInputs.cache
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.AssemblyInfo.cs
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.CopyComplete
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\refint\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.pdb
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.genruntimeconfig.cache
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\ref\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\bin\Debug\net6.0-windows\FluentValidation.dll
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.Properties.Resources.resources
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.Inicio.resources
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.InicioSesion.resources
+C:\Users\Pulidori\source\repos\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.RegistrarReclamo.resources
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.exe
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.deps.json
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.runtimeconfig.json
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\PobreTITO_Programa.pdb
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\FluentValidation.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.AssemblyReference.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.Properties.Resources.resources
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.Inicio.resources
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.InicioSesion.resources
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.RegistrarReclamo.resources
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.Registro.resources
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.GenerateResource.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.AssemblyInfoInputs.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.AssemblyInfo.cs
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.csproj.CopyComplete
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\refint\PobreTITO_Programa.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.pdb
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\PobreTITO_Programa.genruntimeconfig.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\obj\Debug\net6.0-windows\ref\PobreTITO_Programa.dll
