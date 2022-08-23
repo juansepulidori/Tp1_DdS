@@ -1,0 +1,20 @@
+Con Visual Studio
+    Crear un nuevo proyecto de consola (se recomienda usar la versión .NET 6.0)
+    Copiar y pegar el código del archivo Program.cs
+    Ejecutar
+
+Con Visual Studio Code
+    --Instalar uno de los siguientes programas (en mi caso tengo los dos instalados)
+        .NET 6.0 = https://dotnet.microsoft.com/en-us/download
+        .NET Framework 4.8 = https://go.microsoft.com/fwlink/?linkid=2088632
+    --Instalar las siguientes extensiones a la última versión desde la pestaña Extensiones
+        C# = https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
+        C# Extensions = https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions
+        Code Runner = https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+        Mono Debug = https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug
+        Paste JSON as Code = https://marketplace.visualstudio.com/items?itemName=typeguard.quicktype-vs#:~:text=To%20use%20this%20extension%2C%20just,%2FPaste%20JSON%20as%20Code".&text=A%20Rating%20%26%20Review-,quicktype%20infers%20types%20from%20sample%20JSON%20data%2C%20then%20outputs%20strongly,Edit%2FPaste%20JSON%20as%20Code.
+    --Abrir las carpetas donde están los ejemplos
+    --Click derecho sobre la carpeta de un ejemplo y click en "Abrir terminal integrado"
+    --Escribir el siguiente comando: dotnet run
+    --Enter para ejecutar
+    --Cambiar tamaño de letra en el terminal: Configuración > Terminal › Integrated: Font Size

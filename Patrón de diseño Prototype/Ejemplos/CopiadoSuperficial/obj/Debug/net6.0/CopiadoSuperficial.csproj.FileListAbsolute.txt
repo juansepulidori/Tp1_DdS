@@ -1,0 +1,15 @@
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\bin\Debug\net6.0\CopiadoSuperficial.exe
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\bin\Debug\net6.0\CopiadoSuperficial.deps.json
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\bin\Debug\net6.0\CopiadoSuperficial.runtimeconfig.json
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\bin\Debug\net6.0\CopiadoSuperficial.dll
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\bin\Debug\net6.0\CopiadoSuperficial.pdb
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.csproj.AssemblyReference.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.AssemblyInfoInputs.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.AssemblyInfo.cs
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.dll
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\refint\CopiadoSuperficial.dll
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.pdb
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\CopiadoSuperficial.genruntimeconfig.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoSuperficial\obj\Debug\net6.0\ref\CopiadoSuperficial.dll

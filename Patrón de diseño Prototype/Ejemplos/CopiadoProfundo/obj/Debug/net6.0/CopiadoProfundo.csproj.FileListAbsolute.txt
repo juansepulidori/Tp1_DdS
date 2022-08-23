@@ -1,0 +1,30 @@
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.csproj.AssemblyReference.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.AssemblyInfoInputs.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.AssemblyInfo.cs
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.exe
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.deps.json
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.runtimeconfig.json
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.dll
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.pdb
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.dll
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\refint\CopiadoProfundo.dll
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.pdb
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.genruntimeconfig.cache
+C:\Users\Pulidori\Documents\Codigos VS Code\CopiadoProfundo\obj\Debug\net6.0\ref\CopiadoProfundo.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.exe
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.deps.json
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.runtimeconfig.json
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\bin\Debug\net6.0\CopiadoProfundo.pdb
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.csproj.AssemblyReference.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.AssemblyInfoInputs.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.AssemblyInfo.cs
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\refint\CopiadoProfundo.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.pdb
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\CopiadoProfundo.genruntimeconfig.cache
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Patrón de diseño Prototype\Ejemplos\CopiadoProfundo\obj\Debug\net6.0\ref\CopiadoProfundo.dll
