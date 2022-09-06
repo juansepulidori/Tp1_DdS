@@ -12,7 +12,6 @@ namespace PobreTITO_Programa
     internal class GestorPobreTITO
     {
         int idPersona;
-        private SqlConnection conexion = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\BD\BaseDatos.mdf;Integrated Security=True");
 
         //Gestiona el Registro
         public List<string> VerificarRegistro(string dni, string nombreApellido, DateOnly nacimiento, string telefono, string email, string usuario, string contrasena, string contraRep)
@@ -37,10 +36,10 @@ namespace PobreTITO_Programa
             }
             else
             {
-                conexion.Open();
-                persona.NuevaPersona(conexion);
+                Program.conexion.Open();
+                persona.NuevaPersona(Program.conexion);
                 MessageBox.Show("Persona registrada");
-                conexion.Close();
+                Program.conexion.Close();
                 return null;
             }
         }
@@ -48,9 +47,9 @@ namespace PobreTITO_Programa
         //Gestiona el Inicio de Sesión
         public List<string> VerificarInicioSesion(string usuario, string password)
         {
-            conexion.Open();
+            Program.conexion.Open();
             List<string> resultados = new List<string>();
-            SqlCommand select = new SqlCommand($"select * from Persona where usuario = '{usuario}'", conexion);
+            SqlCommand select = new SqlCommand($"select * from Persona where usuario = '{usuario}'", Program.conexion);
             SqlDataReader lector = select.ExecuteReader();
             if (lector.Read())
             {
@@ -72,42 +71,42 @@ namespace PobreTITO_Programa
                 resultados.Add("Usuario no encontrado o incorrecto");
             }
             lector.Close();
-            conexion.Close();
+            Program.conexion.Close();
             return resultados;
         }
 
         //Obtener Incidentes
         public DataTable ObtenerIncidentes()
         {
-            conexion.Open();
-            SqlCommand select = new SqlCommand("select * from Incidente", conexion);
+            Program.conexion.Open();
+            SqlCommand select = new SqlCommand("select * from Incidente", Program.conexion);
             DataTable resultados = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter(select);
             adapter.Fill(resultados);
-            conexion.Close();
+            Program.conexion.Close();
             return resultados;
         }
 
         //Obtener subincidentes
         public DataTable ObtenerSubincidentes(int id)
         {
-            conexion.Open();
-            SqlCommand select = new SqlCommand($"select * from SubIncidente where Incidente_Id = {id}", conexion);
+            Program.conexion.Open();
+            SqlCommand select = new SqlCommand($"select * from SubIncidente where Incidente_Id = {id}", Program.conexion);
             DataTable resultados = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter(select);
             adapter.Fill(resultados);
-            conexion.Close();
+            Program.conexion.Close();
             return resultados;
         }
 
         //Gestiona el reclamo
         public void GestionarReclamo(int subincidente, string direccion, string descripcion)
         {
-            conexion.Open();
+            Program.conexion.Open();
             Reclamo reclamo = new Reclamo(direccion, descripcion);
-            reclamo.NuevoReclamo(idPersona, subincidente, conexion);
+            reclamo.NuevoReclamo(idPersona, subincidente, Program.conexion);
             MessageBox.Show("Reclamo registrado con exito");
-            conexion.Close();
+            Program.conexion.Close();
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj": {}
+    "C:\\Users\\Pulidori\\source\\repos\\Trabajos Diseño de Sistemas\\Círculo de sangre\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj": {
+    "C:\\Users\\Pulidori\\source\\repos\\Trabajos Diseño de Sistemas\\Círculo de sangre\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
+        "projectUniqueName": "C:\\Users\\Pulidori\\source\\repos\\Trabajos Diseño de Sistemas\\Círculo de sangre\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
         "projectName": "Trabajo Practico 1",
-        "projectPath": "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
+        "projectPath": "C:\\Users\\Pulidori\\source\\repos\\Trabajos Diseño de Sistemas\\Círculo de sangre\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
         "packagesPath": "C:\\Users\\Pulidori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\obj\\",
+        "outputPath": "C:\\Users\\Pulidori\\source\\repos\\Trabajos Diseño de Sistemas\\Círculo de sangre\\Programa\\Trabajo Practico 1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7l3RHYg4y8h/TXAFfTeyXasdg5NHFQQKd87hiULrazYmPg0k9km2TyyGw5430AS1GatRm+LdtXIPiQeIqK9rxg==",
+  "dgSpecHash": "symTzeTBuUmSRq0L5JZVFvaTgF04mfJ73U5rpkXqAhvTKhrwVGma9sRmVRAjMvPjqDs48i37ReKZ+NHxCA7apA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pulidori\\source\\repos\\Tp1_DdS\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
+  "projectFilePath": "C:\\Users\\Pulidori\\source\\repos\\Trabajos Diseño de Sistemas\\Círculo de sangre\\Programa\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pulidori\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512"
   ],

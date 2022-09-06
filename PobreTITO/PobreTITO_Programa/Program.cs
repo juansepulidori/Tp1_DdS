@@ -1,3 +1,4 @@
+using System.Data.SqlClient;
 namespace PobreTITO_Programa
 {
     internal static class Program
@@ -9,7 +10,8 @@ namespace PobreTITO_Programa
         public static InicioSesion inicioSesion = new InicioSesion();
         public static RegistrarReclamo registrarReclamo = new RegistrarReclamo();
         public static Registro registro = new Registro();
-        public static GestorPobreTITO gestorPobreTITO = new GestorPobreTITO();  
+        public static GestorPobreTITO gestorPobreTITO = new GestorPobreTITO();
+        public static SqlConnection conexion = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\BD\BaseDatos.mdf;Integrated Security=True");
         [STAThread]
         static void Main()
         {

@@ -1,0 +1,17 @@
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\bin\Debug\net6.0-windows\Ecommerce_Diseño.exe
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\bin\Debug\net6.0-windows\Ecommerce_Diseño.deps.json
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\bin\Debug\net6.0-windows\Ecommerce_Diseño.runtimeconfig.json
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\bin\Debug\net6.0-windows\Ecommerce_Diseño.dll
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\bin\Debug\net6.0-windows\Ecommerce_Diseño.pdb
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.csproj.AssemblyReference.cache
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.csproj.GenerateResource.cache
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.AssemblyInfoInputs.cache
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.AssemblyInfo.cs
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.csproj.CoreCompileInputs.cache
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.dll
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\refint\Ecommerce_Diseño.dll
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.pdb
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.genruntimeconfig.cache
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\ref\Ecommerce_Diseño.dll
+C:\Users\Pulidori\source\repos\Ecommerce_Diseño\obj\Debug\net6.0-windows\Ecommerce_Diseño.IComentario.resources

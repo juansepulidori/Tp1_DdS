@@ -11,7 +11,7 @@ namespace PobreTITO_Programa
 {
     internal class ValidarRegistro: AbstractValidator<Persona>
     {
-        private SqlConnection conexion = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\PobreTITO\PobreTITO_Programa\BD\BaseDatos.mdf;Integrated Security=True");
+        
         public ValidarRegistro()
         {
             RuleFor(x => x.dni).MinimumLength(7).WithMessage("La cantidad de dígitos mínima es 7")
@@ -34,19 +34,19 @@ namespace PobreTITO_Programa
         }
         private bool VerDNIRep(string dni)
         {
-            conexion.Open();
-            SqlCommand select = new SqlCommand($"select dni from Persona where dni = '{dni}'", conexion);
+            Program.conexion.Open();
+            SqlCommand select = new SqlCommand($"select dni from Persona where dni = '{dni}'", Program.conexion);
             SqlDataReader lector = select.ExecuteReader();
             if (lector.Read())
             {
                 lector.Close();
-                conexion.Close();
+                Program.conexion.Close();
                 return false;
             }
             else
             {
                 lector.Close();
-                conexion.Close();
+                Program.conexion.Close();
                 return true;
             }
         }
@@ -57,19 +57,19 @@ namespace PobreTITO_Programa
         }
         private bool VerUsu(string usuario)
         {
-            conexion.Open();
-            SqlCommand select = new SqlCommand($"select dni from Persona where usuario = '{usuario}'", conexion);
+            Program.conexion.Open();
+            SqlCommand select = new SqlCommand($"select dni from Persona where usuario = '{usuario}'", Program.conexion);
             SqlDataReader lector = select.ExecuteReader();
             if (lector.Read())
             {
                 lector.Close();
-                conexion.Close();
+                Program.conexion.Close();
                 return false;
             }
             else
             {
                 lector.Close();
-                conexion.Close();
+                Program.conexion.Close();
                 return true;
             }
         }
