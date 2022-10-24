@@ -18,64 +18,116 @@ namespace Ecommerce_Comentarios
         {
             InitializeComponent();
         }
+
         private void IComentarios_Load(object sender, EventArgs e)
         {
-            ObtenerProductos();
-            txt_opinion = new System.Windows.Controls.TextBox();
-            txt_opinion.TextWrapping = System.Windows.TextWrapping.Wrap;
-            txt_opinion.AcceptsReturn = true;
-            txt_opinion.SpellCheck.IsEnabled = true;
-            txt_opinion.FontSize = 14;
-            txt_opinion.FontFamily = new System.Windows.Media.FontFamily("Times New Roman");
-            controladorOrtografia.Child = txt_opinion;
+            MostrarProductos();
+            ConfigurarElementoControladorComentario();
         }
 
         private void btn_enviarComentario_Click(object sender, EventArgs e)
         {
             try
             {
-                Program.comentario.opinion = txt_opinion.Text;
-                Program.comentario.calificacion = calificacion;
-                Program.comentario.fechaComentario = DateTime.Now;
-                Program.comentario.fkProducto = (int)cb_Productos.SelectedIndex;
-
-                List<string> errores = Program.gestorComentarios.ErroresComentario();
-                errorProvider1.Clear();
-                if (errores == null)
+                ObtenerDatosComentario();
+                List<string> erroresComentario = Program.gestorComentarios.ErroresComentario();
+                BorrarMensajesDeError();
+                if (ElComentarioEsValido(erroresComentario))
                 {
-                    //Program.gestorComentarios.GuardarComentario();
-                    MessageBox.Show("Se guardo el comentario");
+                    Program.gestorComentarios.GuardarComentario();
+                    MostrarMensaje("Se guardo el comentario");
+                    MostrarPromedioCalificacionesProducto();
+                    MostrarEstrellasPromedio();
                 }
                 else
                 {
-                    for (int i = 0; i < errores.Count; i++)
-                    {
-                        switch (errores[i])
-                        {
-                            case "calificacion":
-                                i++;
-                                errorProvider1.SetError(img_estrellaRellena_5, errores[i]);
-                                break;
-                            case "opinion":
-                                i++;
-                                errorProvider1.SetError(controladorOrtografia, errores[i]);
-                                break;
-                        }
-                    }
+                    MostrarErroresComentario(erroresComentario);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Faltan campos por completar");
+                MostrarMensaje("Faltan campos por completar");
             }
         }
-        private void ObtenerProductos()
+
+        private void cb_Productos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OcultarEstrellas();
+            MostrarPromedioCalificacionesProducto();
+            MostrarEstrellasPromedio();
+        }
+
+        private void MostrarProductos()
         {
             DataTable productos = Program.gestorComentarios.Productos();
             cb_Productos.DataSource = productos;
             cb_Productos.ValueMember = "IdProducto";
             cb_Productos.DisplayMember = "nombreProducto";
         }
+
+        private void ObtenerDatosComentario()
+        {
+            Program.comentario.opinion = txt_opinion.Text;
+            Program.comentario.calificacion = calificacion;
+            Program.comentario.fechaComentario = DateTime.Now;
+            Program.comentario.fkProducto = (int)cb_Productos.SelectedIndex;
+        }
+
+        private bool ElComentarioEsValido(List<string> erroresComentario)
+        {
+            bool condicion = false;
+            if (erroresComentario == null)
+            {
+                condicion = true;
+            }
+            return condicion;
+        }
+
+        private void MostrarErroresComentario(List<string> erroresComentario)
+        {
+            for (int i = 0; i < erroresComentario.Count; i++)
+            {
+                switch (erroresComentario[i])
+                {
+                    case "calificacion":
+                        i++;
+                        errorProvider1.SetError(img_estrellaRellena_5, erroresComentario[i]);
+                        break;
+                    case "opinion":
+                        i++;
+                        errorProvider1.SetError(eh_controladorComentario, erroresComentario[i]);
+                        break;
+                }
+            }
+        }
+
+        private void ConfigurarElementoControladorComentario()
+        {
+            txt_opinion = new System.Windows.Controls.TextBox();
+            txt_opinion.TextWrapping = System.Windows.TextWrapping.Wrap;
+            txt_opinion.AcceptsReturn = true;
+            txt_opinion.SpellCheck.IsEnabled = true;
+            txt_opinion.FontSize = 14;
+            txt_opinion.FontFamily = new System.Windows.Media.FontFamily("Times New Roman");
+            eh_controladorComentario.Child = txt_opinion;
+        }
+
+        private void BorrarMensajesDeError()
+        {
+            errorProvider1.Clear();
+        }
+
+        private void MostrarMensaje(string mensaje)
+        {
+            MessageBox.Show(mensaje);
+        }
+
+        private void MostrarPromedioCalificacionesProducto()
+        {
+            lbl_promedioCalificacionesProducto.Text = Program.gestorComentarios.PromedioCalificacionesProducto(cb_Productos.SelectedIndex);
+        }
+
+        #region Mostrar Estrellas
 
         private void img_estrellaVacia_1_Click(object sender, EventArgs e)
         {
@@ -161,6 +213,107 @@ namespace Ecommerce_Comentarios
             img_estrellaVacia_2.BringToFront();
             calificacion = 1;
         }
+
+        private void OcultarEstrellas()
+        {
+            img_estrellaRellena_1.SendToBack();
+            img_estrellaRellena_2.SendToBack();
+            img_estrellaRellena_3.SendToBack();
+            img_estrellaRellena_4.SendToBack();
+            img_estrellaRellena_5.SendToBack();
+            img_estrellaVacia_1.BringToFront();
+            img_estrellaVacia_2.BringToFront();
+            img_estrellaVacia_3.BringToFront();
+            img_estrellaVacia_4.BringToFront();
+            img_estrellaVacia_5.BringToFront();
+        }
+
+        private void MostrarEstrellasPromedio()
+        {
+            float promedioCalificaciones = float.Parse(lbl_promedioCalificacionesProducto.Text);
+            if (promedioCalificaciones == 0)
+            {
+                img_estrellaVaciaPromedio1.BringToFront();
+                img_estrellaVaciaPromedio2.BringToFront();
+                img_estrellaVaciaPromedio3.BringToFront();
+                img_estrellaVaciaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 1 && promedioCalificaciones < 1.5)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaVaciaPromedio2.BringToFront();
+                img_estrellaVaciaPromedio3.BringToFront();
+                img_estrellaVaciaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if(promedioCalificaciones >= 1.5 && promedioCalificaciones < 2)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaMitadRellenaPromedio2.BringToFront();
+                img_estrellaVaciaPromedio3.BringToFront();
+                img_estrellaVaciaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 2 && promedioCalificaciones < 2.5)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaVaciaPromedio3.BringToFront();
+                img_estrellaVaciaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 2.5 && promedioCalificaciones < 3)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaMitadRellenaPromedio3.BringToFront();
+                img_estrellaVaciaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 3 && promedioCalificaciones < 3.5)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaRellenaPromedio3.BringToFront();
+                img_estrellaVaciaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 3.5 && promedioCalificaciones < 4)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaRellenaPromedio3.BringToFront();
+                img_estrellaMitadRellenaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 4 && promedioCalificaciones < 4.5)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaRellenaPromedio3.BringToFront();
+                img_estrellaRellenaPromedio4.BringToFront();
+                img_estrellaVaciaPromedio5.BringToFront();
+            }
+            else if (promedioCalificaciones >= 4.5 && promedioCalificaciones < 5)
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaRellenaPromedio3.BringToFront();
+                img_estrellaRellenaPromedio4.BringToFront();
+                img_estrellaMitadRellenaPromedio5.BringToFront();
+            }
+            else
+            {
+                img_estrellaRellenaPromedio1.BringToFront();
+                img_estrellaRellenaPromedio2.BringToFront();
+                img_estrellaRellenaPromedio3.BringToFront();
+                img_estrellaRellenaPromedio4.BringToFront();
+                img_estrellaRellenaPromedio5.BringToFront();
+            }
+        }
+
+        #endregion
 
         
     }

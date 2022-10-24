@@ -11,43 +11,70 @@ namespace Ecommerce_Comentarios
 {
     internal class GestorComentarios
     {
-        public SqlConnection conexion = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+Program.direccionDataBase+";Integrated Security=True");
+        public SqlConnection conexionBaseDeDatos = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+Program.direccionDataBase+";Integrated Security=True");
+        List<String> listaErrores = new List<String>();
         public List<String> ErroresComentario()
         {
             var validaciones = new ValidacionesComentario();
-            var validacion = validaciones.Validate(Program.comentario);
-            List<String> errores = new List<String>();
+            FluentValidation.Results.ValidationResult validacion = validaciones.Validate(Program.comentario);
+            VaciarListaErrores();
             if (validacion.IsValid)
             {
                 return null;
             }
             else
             {
-                foreach (var error in validacion.Errors)
-                {
-                    errores.Add(error.PropertyName);
-                    errores.Add(error.ErrorMessage);
-                }
-                return errores;
+                RellenarListaErrores(validacion);
+                return listaErrores;
             }
 
         }
         public void GuardarComentario()
         {
-            conexion.Open();
-            SqlCommand insert = new SqlCommand($"insert into Comentarios values('{Program.comentario.opinion}', {Program.comentario.calificacion}, '{Program.comentario.fechaComentario}', 0, 0, {Program.comentario.fkProducto})", conexion);
-            insert.ExecuteNonQuery();
-            conexion.Close();
+            AbrirConexionBaseDeDatos();
+            Program.comentario.Guardar(conexionBaseDeDatos);
+            CerrarConexionBaseDeDatos();
         }
         public DataTable Productos()
         {
-            conexion.Open();
-            SqlCommand selectProductos = new SqlCommand("select * from Producto", conexion);
+            AbrirConexionBaseDeDatos();
+            SqlCommand selectProductos = SelectSQL("select * from Producto");
             SqlDataAdapter adapter = new SqlDataAdapter(selectProductos);
             DataTable productos = new DataTable();
             adapter.Fill(productos);
-            conexion.Close();
+            CerrarConexionBaseDeDatos();
             return productos;
+        }
+        public string PromedioCalificacionesProducto(int fk_idProducto)
+        {
+            AbrirConexionBaseDeDatos();
+            string promedioCalificacionesProducto = Program.producto.PromedioCalificaciones(conexionBaseDeDatos, fk_idProducto);
+            CerrarConexionBaseDeDatos();
+            return promedioCalificacionesProducto;
+        }
+        private void VaciarListaErrores()
+        {
+            listaErrores.Clear();
+        }
+        private void RellenarListaErrores(FluentValidation.Results.ValidationResult validacion)
+        {
+            foreach (var error in validacion.Errors)
+            {
+                listaErrores.Add(error.PropertyName);
+                listaErrores.Add(error.ErrorMessage);
+            }
+        }
+        private void AbrirConexionBaseDeDatos()
+        {
+            conexionBaseDeDatos.Open();
+        }
+        private void CerrarConexionBaseDeDatos()
+        {
+            conexionBaseDeDatos.Close();
+        }
+        private SqlCommand SelectSQL(string select)
+        {
+            return new SqlCommand(select, conexionBaseDeDatos);
         }
     }
 }
