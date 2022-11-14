@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Ecommerce_Comentarios
 {
@@ -23,6 +25,13 @@ namespace Ecommerce_Comentarios
         {
             MostrarProductos();
             ConfigurarElementoControladorComentario();
+            eh_controladorComentario.Enabled = HabilitarComentario();
+            btn_enviarComentario.Enabled = HabilitarComentario();
+            img_estrellaVacia_1.Enabled = HabilitarComentario();
+            img_estrellaVacia_2.Enabled = HabilitarComentario();
+            img_estrellaVacia_3.Enabled = HabilitarComentario();
+            img_estrellaVacia_4.Enabled = HabilitarComentario();
+            img_estrellaVacia_5.Enabled = HabilitarComentario();
         }
 
         private void btn_enviarComentario_Click(object sender, EventArgs e)
@@ -38,6 +47,15 @@ namespace Ecommerce_Comentarios
                     MostrarMensaje("Se guardo el comentario");
                     MostrarPromedioCalificacionesProducto();
                     MostrarEstrellasPromedio();
+                    GraficarCantidadEstrellasProducto();
+                    Program.gestorComentarios.EliminarElementoCarrito(cb_Productos.SelectedIndex);
+                    eh_controladorComentario.Enabled = HabilitarComentario();
+                    btn_enviarComentario.Enabled = HabilitarComentario();
+                    img_estrellaVacia_1.Enabled = HabilitarComentario();
+                    img_estrellaVacia_2.Enabled = HabilitarComentario();
+                    img_estrellaVacia_3.Enabled = HabilitarComentario();
+                    img_estrellaVacia_4.Enabled = HabilitarComentario();
+                    img_estrellaVacia_5.Enabled = HabilitarComentario();
                 }
                 else
                 {
@@ -55,6 +73,15 @@ namespace Ecommerce_Comentarios
             OcultarEstrellas();
             MostrarPromedioCalificacionesProducto();
             MostrarEstrellasPromedio();
+            GraficarCantidadEstrellasProducto();
+            eh_controladorComentario.Child = txt_opinion;
+            eh_controladorComentario.Enabled = HabilitarComentario();
+            btn_enviarComentario.Enabled = HabilitarComentario();
+            img_estrellaVacia_1.Enabled = HabilitarComentario();
+            img_estrellaVacia_2.Enabled = HabilitarComentario();
+            img_estrellaVacia_3.Enabled = HabilitarComentario();
+            img_estrellaVacia_4.Enabled = HabilitarComentario();
+            img_estrellaVacia_5.Enabled = HabilitarComentario();
         }
 
         private void MostrarProductos()
@@ -125,6 +152,37 @@ namespace Ecommerce_Comentarios
         private void MostrarPromedioCalificacionesProducto()
         {
             lbl_promedioCalificacionesProducto.Text = Program.gestorComentarios.PromedioCalificacionesProducto(cb_Productos.SelectedIndex);
+        }
+
+        private void GraficarCantidadEstrellasProducto()
+        {
+            ArrayList estrellas = new ArrayList();
+            ArrayList cantidad = new ArrayList();
+
+            for (int i = 5; i > 0; i--) {
+                estrellas.Add(i.ToString());
+                cantidad.Add(Program.gestorComentarios.CantidadEstrellasProducto(i, cb_Productos.SelectedIndex));
+            }
+            cht_cantidadEstrellas.Series[0].Points.DataBindXY(estrellas, cantidad);
+
+        }
+
+        private bool HabilitarComentario()
+        {
+            bool habilitar = false;
+            foreach (var producto in Program.carrito.productos)
+            {
+                if (producto.idProducto == cb_Productos.SelectedIndex)
+                {
+                    habilitar = true;
+                    break;
+                }
+                else
+                {
+                    habilitar = false;
+                }
+            }
+            return habilitar;
         }
 
         #region Mostrar Estrellas
@@ -313,8 +371,22 @@ namespace Ecommerce_Comentarios
             }
         }
 
+
         #endregion
 
-        
+        private void cargarCarrito_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Program.gestorComentarios.CargarCarrito(openFileDialog1.FileName);
+            }
+            eh_controladorComentario.Enabled = HabilitarComentario();
+            btn_enviarComentario.Enabled = HabilitarComentario();
+            img_estrellaVacia_1.Enabled = HabilitarComentario();
+            img_estrellaVacia_2.Enabled = HabilitarComentario();
+            img_estrellaVacia_3.Enabled = HabilitarComentario();
+            img_estrellaVacia_4.Enabled = HabilitarComentario();
+            img_estrellaVacia_5.Enabled = HabilitarComentario();
+        }
     }
 }

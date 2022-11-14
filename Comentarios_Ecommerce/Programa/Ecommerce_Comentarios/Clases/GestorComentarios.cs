@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using FluentValidation;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Ecommerce_Comentarios
 {
@@ -13,6 +15,7 @@ namespace Ecommerce_Comentarios
     {
         public SqlConnection conexionBaseDeDatos = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+Program.direccionDataBase+";Integrated Security=True");
         List<String> listaErrores = new List<String>();
+        public string rutaJson = string.Empty;
         public List<String> ErroresComentario()
         {
             var validaciones = new ValidacionesComentario();
@@ -75,6 +78,48 @@ namespace Ecommerce_Comentarios
         private SqlCommand SelectSQL(string select)
         {
             return new SqlCommand(select, conexionBaseDeDatos);
+        }
+        public string CantidadEstrellasProducto(int estrella, int fk_idProducto)
+        {
+            AbrirConexionBaseDeDatos();
+            SqlCommand select = SelectSQL($"select count(calificacion) from Comentarios where {fk_idProducto} = fk_IdProducto and {estrella} = calificacion");
+            select.ExecuteNonQuery();
+            SqlDataReader lector = select.ExecuteReader();
+            lector.Read();
+            string cantidad = lector.GetInt32(0).ToString();
+            CerrarConexionBaseDeDatos();
+            return cantidad;
+        }
+
+        public void ObtenerCarrito()
+        {
+            try
+            {
+                string carritoSerializado;
+                using (var lector = new StreamReader(rutaJson))
+                {
+                    carritoSerializado = lector.ReadToEnd();
+                }
+                if (JsonConvert.DeserializeObject<Carrito>(carritoSerializado) != null)
+                {
+                    Program.carrito = JsonConvert.DeserializeObject<Carrito>(carritoSerializado);
+                }
+            }catch (Exception ex)
+            {
+                
+            }
+            
+        }
+
+        public void CargarCarrito(string rutaCarrito)
+        {
+            rutaJson = rutaCarrito;
+            ObtenerCarrito();
+        }
+
+        public void EliminarElementoCarrito(int indice)
+        {
+            Program.carrito.productos.RemoveAt(indice);
         }
     }
 }

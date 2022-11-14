@@ -1,0 +1,12 @@
+{
+  "productos": [
+    {
+      "idProducto": 0,
+      "nombre": "Zapatilla nike"
+    },
+    {
+      "idProducto": 1,
+      "nombre": "Remera Messi seleccion argentina"
+    }
+  ]
+}

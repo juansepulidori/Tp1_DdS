@@ -38,3 +38,27 @@ C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Comentarios_Ecommerc
 C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Comentarios_Ecommerce\Programa\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.csproj.CopyComplete
 C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Comentarios_Ecommerce\Programa\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.exe
 C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Comentarios_Ecommerce\Programa\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.pdb
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\DataBaseComentarios.mdf
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\DataBaseComentarios_log.ldf
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\Ecommerce_Comentarios.exe.config
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\Ecommerce_Comentarios.exe
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\Ecommerce_Comentarios.pdb
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\FluentValidation.dll
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\FluentValidation.xml
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\juans\source\repos\Ecommerce_Comentarios\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.csproj.AssemblyReference.cache
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.csproj.SuggestedBindingRedirects.cache
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.IComentarios.resources
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.Properties.Resources.resources
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.csproj.GenerateResource.cache
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.csproj.CoreCompileInputs.cache
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.csproj.CopyComplete
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.exe
+C:\Users\juans\source\repos\Ecommerce_Comentarios\obj\Debug\Ecommerce_Comentarios.pdb
+C:\Users\Pulidori\source\repos\Ecommerce_Comentarios\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pulidori\source\repos\Ecommerce_Comentarios\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Comentarios_Ecommerce\Programa\Ecommerce_Comentarios\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pulidori\source\repos\Trabajos Diseño de Sistemas\Comentarios_Ecommerce\Programa\Ecommerce_Comentarios\bin\Debug\Newtonsoft.Json.xml
